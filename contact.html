@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snazzy Paws Grooming - Professional Dog Grooming Services in Hamilton"
+    />
+    <title>Contact | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-flex">
+        <h1>
+          <a href="index.html">
+            <img
+              src="images/Logo.svg"
+              alt="Snazzy Paws Grooming"
+              class="logo-img"
+            />
+          </a>
+        </h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-top-grid">
+            <div class="details-block">
+              <h2>Our details</h2>
+
+              <p>
+                <strong>Phone:</strong> 021 123 4567<br />
+                <strong>Email:</strong> admin@snazzypaws.nz<br />
+                <strong>Address:</strong> 123 Dog Street Hamilton
+              </p>
+              <p>
+                Open Tuesday - Saturday 9am - 5pm<br />
+                Closed Public Holidays
+              </p>
+            </div>
+
+            <div class="map-block">
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108796.5243750475!2d175.1658175852201!3d-37.77779219035622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d227487a63621%3A0x500ef6143a29903!2sHamilton!5e1!3m2!1sen!2snz!4v1767513856353!5m2!1sen!2snz"
+                  width="600"
+                  height="450"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                >
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <div class="map-cta">
+            <a href="booking.html" class="btn btn-large">Book now</a>
+          </div>
+          <hr class="divider" />
+          <div class="message-section">
+            <h2>Message us:</h2>
+            <form action="#" method="post" class="contact-form-grid">
+              <div class="form-inputs-col">
+                <div class="form-group">
+                  <label for="contact-first-name">First Name:</label>
+                  <input
+                    type="text"
+                    id="contact-first-name"
+                    name="first-name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-last-name">Last Name:</label>
+                  <input
+                    type="text"
+                    id="contact-last-name"
+                    name="last-name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Email Address:</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-mobile">Mobile Number:</label>
+                  <input type="tel" id="contact-mobile" name="mobile" />
+                </div>
+              </div>
+
+              <div class="form-message-col">
+                <div class="form-group full-height">
+                  <label for="contact-message">Message:</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="form-submit-row">
+                <button type="submit" class="btn btn-large submit-btn">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-flex">
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_facebook.svg" alt="Facebook Icon"
+          /></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_instagram.svg" alt="Instagram Icon"
+          /></a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_youtube.svg" alt="YouTube Icon"
+          /></a>
+          <a
+            href="https://www.messenger.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_messenger.svg" alt="Messenger Icon"
+          /></a>
+        </div>
+        <div class="address">
+          <div class="location-details">
+            <p>
+              123 Dog Street, Hamilton<br />
+              021 123 4567
+            </p>
+          </div>
+          <p class="hours">
+            <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
+            <span>(Closed Public Holidays)</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

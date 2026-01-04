@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Snazzy Paws Grooming - Professional Dog Grooming Services in Hamilton"
+    />
+    <title>Booking | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-flex">
+        <h1>
+          <a href="index.html">
+            <img
+              src="images/Logo.svg"
+              alt="Snazzy Paws Grooming"
+              class="logo-img"
+            />
+          </a>
+        </h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="booking-section">
+        <div class="container">
+          <div class="form-container page-layout">
+            <h2>Book an Appointment</h2>
+            <form action="#" method="post" class="booking-form">
+              <div class="form-col-left">
+                <!-- Groomer -->
+                <div class="form-group">
+                  <label for="groomer">Select Groomer:</label>
+                  <select id="groomer" name="groomer">
+                    <option value="">Any Groomer</option>
+                    <option value="Sarah">Sarah</option>
+                    <option value="Jane">Jane</option>
+                  </select>
+                </div>
+
+                <!-- Service -->
+                <div class="form-group">
+                  <label for="service">Select Service:</label>
+                  <select id="service" name="service">
+                    <option value="bath-brush">Bath & Brush</option>
+                    <option value="haircut">Haircut</option>
+                    <option value="nails">Nail Trim</option>
+                    <option value="ears">Ear Cleaning</option>
+                    <option value="teeth">Teeth Brushing</option>
+                    <option value="shed">De-shedding Treatment</option>
+                    <option value="flea">Flea and Tick Treatment</option>
+                    <option value="spa">Spa Package</option>
+                    <option value="express">Express Service</option>
+                    <option value="medicated">Medicated Bath</option>
+                    <option value="special">Special-breed Cuts</option>
+                    <option value="puppy">Puppy Package</option>
+                    <option value="senior">Senior Dog Package</option>
+                    <option value="full-groom">Full Grooming Package</option>
+                  </select>
+                </div>
+
+                <!-- Date -->
+                <div class="form-group">
+                  <label for="date">Preferred Date:</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+
+                <!-- Time -->
+                <div class="form-group">
+                  <label for="time">Preferred Time:</label>
+                  <select id="time" name="time">
+                    <optgroup label="Morning">
+                      <option value="09:30">09:00 AM</option>
+                      <option value="09:30">09:30 AM</option>
+                      <option value="10:00">10:00 AM</option>
+                      <option value="10:30">10:30 AM</option>
+                      <option value="11:00">11:00 AM</option>
+                      <option value="11:30">11:30 AM</option>
+                    </optgroup>
+                    <optgroup label="Afternoon">
+                      <option value="13:00">01:00 PM</option>
+                      <option value="13:30">01:30 PM</option>
+                      <option value="14:00">02:00 PM</option>
+                      <option value="14:30">02:30 PM</option>
+                      <option value="15:00">03:00 PM</option>
+                      <option value="15:30">03:30 PM</option>
+                      <option value="16:00">04:00 PM</option>
+                      <option value="16:30">04:30 PM</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-col-right">
+                <div class="form-row">
+                  <div class="form-group half-width">
+                    <label for="first-name">First Name:</label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      name="first-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group half-width">
+                    <label for="last-name">Last Name:</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="mobile">Mobile Number:</label>
+                  <input type="tel" id="mobile" name="mobile" />
+                </div>
+
+                <div class="form-group">
+                  <label for="dog-name">Dog's Name:</label>
+                  <input type="text" id="dog-name" name="dog-name" required />
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group half-width">
+                    <label for="dog-breed">Breed:</label>
+                    <input
+                      type="text"
+                      id="dog-breed"
+                      name="dog-breed"
+                      required
+                    />
+                  </div>
+                  <div class="form-group half-width">
+                    <label for="dog-age">Age (Years):</label>
+                    <input
+                      type="number"
+                      id="dog-age"
+                      name="dog-age"
+                      min="0"
+                      max="25"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="notes">Notes:</label>
+                  <textarea id="notes" name="notes" rows="4"></textarea>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="privacy" name="privacy" required />
+                  <label for="privacy"
+                    >I agree to the <a href="#">Privacy Policy</a></label
+                  >
+                </div>
+                <div class="checkbox-group">
+                  <input
+                    type="checkbox"
+                    id="cancellation"
+                    name="cancellation"
+                    required
+                  />
+                  <label for="cancellation"
+                    >I agree to the <a href="#">Cancellation Policy</a></label
+                  >
+                </div>
+
+                <button type="submit" class="btn btn-large submit-btn">
+                  Book Now
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-flex">
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_facebook.svg" alt="Facebook Icon"
+          /></a>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_instagram.svg" alt="Instagram Icon"
+          /></a>
+          <a
+            href="https://www.youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_youtube.svg" alt="YouTube Icon"
+          /></a>
+          <a
+            href="https://www.messenger.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="images/icons/icon_messenger.svg" alt="Messenger Icon"
+          /></a>
+        </div>
+        <div class="address">
+          <div class="location-details">
+            <p>
+              123 Dog Street, Hamilton<br />
+              021 123 4567
+            </p>
+          </div>
+          <p class="hours">
+            <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
+            <span>(Closed Public Holidays)</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
