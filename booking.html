@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,244 +8,386 @@
       content="Snazzy Paws Grooming - Professional Dog Grooming Services in Hamilton"
     />
     <title>Booking | Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
     <header>
-      <div class="container header-flex">
-        <h1>
-          <a href="index.html">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
             <img
               src="images/Logo.svg"
               alt="Snazzy Paws Grooming"
               class="logo-img"
+              width="200"
             />
           </a>
-        </h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html" class="active">Booking</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="booking-section">
+      <section class="py-5 bg-light">
         <div class="container">
-          <div class="form-container page-layout">
-            <h2>Book an Appointment</h2>
-            <form action="#" method="post" class="booking-form">
-              <div class="form-col-left">
-                <!-- Groomer -->
-                <div class="form-group">
-                  <label for="groomer">Select Groomer:</label>
-                  <select id="groomer" name="groomer">
-                    <option value="">Any Groomer</option>
-                    <option value="Sarah">Sarah</option>
-                    <option value="Jane">Jane</option>
-                  </select>
-                </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="card shadow-sm border-0 rounded-3">
+                <div class="card-body p-4 p-md-5">
+                  <h2 class="mb-4 text-center">Book an Appointment</h2>
 
-                <!-- Service -->
-                <div class="form-group">
-                  <label for="service">Select Service:</label>
-                  <select id="service" name="service">
-                    <option value="bath-brush">Bath & Brush</option>
-                    <option value="haircut">Haircut</option>
-                    <option value="nails">Nail Trim</option>
-                    <option value="ears">Ear Cleaning</option>
-                    <option value="teeth">Teeth Brushing</option>
-                    <option value="shed">De-shedding Treatment</option>
-                    <option value="flea">Flea and Tick Treatment</option>
-                    <option value="spa">Spa Package</option>
-                    <option value="express">Express Service</option>
-                    <option value="medicated">Medicated Bath</option>
-                    <option value="special">Special-breed Cuts</option>
-                    <option value="puppy">Puppy Package</option>
-                    <option value="senior">Senior Dog Package</option>
-                    <option value="full-groom">Full Grooming Package</option>
-                  </select>
-                </div>
-
-                <!-- Date -->
-                <div class="form-group">
-                  <label for="date">Preferred Date:</label>
-                  <input type="date" id="date" name="date" required />
-                </div>
-
-                <!-- Time -->
-                <div class="form-group">
-                  <label for="time">Preferred Time:</label>
-                  <select id="time" name="time">
-                    <optgroup label="Morning">
-                      <option value="09:30">09:00 AM</option>
-                      <option value="09:30">09:30 AM</option>
-                      <option value="10:00">10:00 AM</option>
-                      <option value="10:30">10:30 AM</option>
-                      <option value="11:00">11:00 AM</option>
-                      <option value="11:30">11:30 AM</option>
-                    </optgroup>
-                    <optgroup label="Afternoon">
-                      <option value="13:00">01:00 PM</option>
-                      <option value="13:30">01:30 PM</option>
-                      <option value="14:00">02:00 PM</option>
-                      <option value="14:30">02:30 PM</option>
-                      <option value="15:00">03:00 PM</option>
-                      <option value="15:30">03:30 PM</option>
-                      <option value="16:00">04:00 PM</option>
-                      <option value="16:30">04:30 PM</option>
-                    </optgroup>
-                  </select>
+                  <form action="#" method="post">
+                    <div class="row g-4">
+                      <div class="col-md-6">
+                        <h4 class="mb-3 text-primary">Appointment Details</h4>
+                        <!-- Groomer -->
+                        <div class="mb-3">
+                          <label for="groomer" class="form-label fw-bold"
+                            >Select Groomer:</label
+                          >
+                          <select
+                            id="groomer"
+                            name="groomer"
+                            class="form-select"
+                          >
+                            <option value="">Any Groomer</option>
+                            <option value="Sarah">Sarah</option>
+                            <option value="Jane">Jane</option>
+                          </select>
+                        </div>
+                        <!-- Service -->
+                        <div class="mb-3">
+                          <label for="service" class="form-label fw-bold"
+                            >Select Service:</label
+                          >
+                          <select
+                            id="service"
+                            name="service"
+                            class="form-select"
+                          >
+                            <option value="bath-brush">Bath & Brush</option>
+                            <option value="haircut">Haircut</option>
+                            <option value="nails">Nail Trim</option>
+                            <option value="ears">Ear Cleaning</option>
+                            <option value="teeth">Teeth Brushing</option>
+                            <option value="shed">De-shedding Treatment</option>
+                            <option value="flea">
+                              Flea and Tick Treatment
+                            </option>
+                            <option value="spa">Spa Package</option>
+                            <option value="express">Express Service</option>
+                            <option value="medicated">Medicated Bath</option>
+                            <option value="special">Special-breed Cuts</option>
+                            <option value="puppy">Puppy Package</option>
+                            <option value="senior">Senior Dog Package</option>
+                            <option value="full-groom">
+                              Full Grooming Package
+                            </option>
+                          </select>
+                        </div>
+                        <!-- Date -->
+                        <div class="mb-3">
+                          <label for="date" class="form-label fw-bold"
+                            >Preferred Date:</label
+                          >
+                          <input
+                            type="date"
+                            id="date"
+                            name="date"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <!-- Time -->
+                        <div class="mb-3">
+                          <label for="time" class="form-label fw-bold"
+                            >Preferred Time:</label
+                          >
+                          <select id="time" name="time" class="form-select">
+                            <optgroup label="Morning">
+                              <option value="09:00">09:00 AM</option>
+                              <option value="09:30">09:30 AM</option>
+                              <option value="10:00">10:00 AM</option>
+                              <option value="10:30">10:30 AM</option>
+                              <option value="11:00">11:00 AM</option>
+                              <option value="11:30">11:30 AM</option>
+                            </optgroup>
+                            <optgroup label="Afternoon">
+                              <option value="13:00">01:00 PM</option>
+                              <option value="13:30">01:30 PM</option>
+                              <option value="14:00">02:00 PM</option>
+                              <option value="14:30">02:30 PM</option>
+                              <option value="15:00">03:00 PM</option>
+                              <option value="15:30">03:30 PM</option>
+                              <option value="16:00">04:00 PM</option>
+                              <option value="16:30">04:30 PM</option>
+                            </optgroup>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- Person's details -->
+                      <div class="col-md-6">
+                        <h4 class="mb-3 text-primary">Your Details</h4>
+                        <!-- Name -->
+                        <div class="row g-2 mb-3">
+                          <div class="col-6">
+                            <label for="first-name" class="form-label fw-bold"
+                              >First Name:</label
+                            >
+                            <input
+                              type="text"
+                              id="first-name"
+                              name="first-name"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                          <div class="col-6">
+                            <label for="last-name" class="form-label fw-bold"
+                              >Last Name:</label
+                            >
+                            <input
+                              type="text"
+                              id="last-name"
+                              name="last-name"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="mb-3">
+                          <label for="email" class="form-label fw-bold"
+                            >Email Address:</label
+                          >
+                          <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <!-- Mobile -->
+                        <div class="mb-3">
+                          <label for="mobile" class="form-label fw-bold"
+                            >Mobile Number:</label
+                          >
+                          <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            class="form-control"
+                          />
+                        </div>
+                        <!-- Dog's name -->
+                        <div class="mb-3">
+                          <label for="dog-name" class="form-label fw-bold"
+                            >Dog's Name:</label
+                          >
+                          <input
+                            type="text"
+                            id="dog-name"
+                            name="dog-name"
+                            class="form-control"
+                            required
+                          />
+                        </div>
+                        <!-- dog breed -->
+                        <div class="row g-2 mb-3">
+                          <div class="col-6">
+                            <label for="dog-breed" class="form-label fw-bold"
+                              >Breed:</label
+                            >
+                            <input
+                              type="text"
+                              id="dog-breed"
+                              name="dog-breed"
+                              class="form-control"
+                              required
+                            />
+                          </div>
+                          <!-- Dog's age -->
+                          <div class="col-6">
+                            <label for="dog-age" class="form-label fw-bold"
+                              >Age (Years):</label
+                            >
+                            <input
+                              type="number"
+                              id="dog-age"
+                              name="dog-age"
+                              class="form-control"
+                              min="0"
+                              max="25"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <!-- Notes -->
+                        <div class="mb-3">
+                          <label for="notes" class="form-label fw-bold"
+                            >Notes:</label
+                          >
+                          <textarea
+                            id="notes"
+                            name="notes"
+                            rows="3"
+                            class="form-control"
+                          ></textarea>
+                        </div>
+                        <!-- Privacy checkbox -->
+                        <div class="form-check mb-2">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="privacy"
+                            name="privacy"
+                            required
+                          />
+                          <label class="form-check-label" for="privacy">
+                            I agree to the
+                            <a
+                              href="privacy.html"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >Privacy Policy</a
+                            >
+                          </label>
+                        </div>
+                        <!-- Cancellation terms checkbox -->
+                        <div class="form-check mb-4">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="cancellation"
+                            name="cancellation"
+                            required
+                          />
+                          <label class="form-check-label" for="cancellation">
+                            I agree to the <a href="#">Cancellation Policy</a>
+                          </label>
+                        </div>
+                        <!-- Submit button -->
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-lg w-100"
+                        >
+                          Book Now
+                        </button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <!-- Name -->
-              <div class="form-col-right">
-                <div class="form-row">
-                  <div class="form-group half-width">
-                    <label for="first-name">First Name:</label>
-                    <input
-                      type="text"
-                      id="first-name"
-                      name="first-name"
-                      required
-                    />
-                  </div>
-                  <div class="form-group half-width">
-                    <label for="last-name">Last Name:</label>
-                    <input
-                      type="text"
-                      id="last-name"
-                      name="last-name"
-                      required
-                    />
-                  </div>
-                </div>
-                <!-- Contact details -->
-                <div class="form-group">
-                  <label for="email">Email Address:</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-
-                <div class="form-group">
-                  <label for="mobile">Mobile Number:</label>
-                  <input type="tel" id="mobile" name="mobile" />
-                </div>
-                <!-- Dog details -->
-                <div class="form-group">
-                  <label for="dog-name">Dog's Name:</label>
-                  <input type="text" id="dog-name" name="dog-name" required />
-                </div>
-
-                <div class="form-row">
-                  <div class="form-group half-width">
-                    <label for="dog-breed">Breed:</label>
-                    <input
-                      type="text"
-                      id="dog-breed"
-                      name="dog-breed"
-                      required
-                    />
-                  </div>
-                  <div class="form-group half-width">
-                    <label for="dog-age">Age (Years):</label>
-                    <input
-                      type="number"
-                      id="dog-age"
-                      name="dog-age"
-                      min="0"
-                      max="25"
-                      required
-                    />
-                  </div>
-                </div>
-                <!-- Notes -->
-                <div class="form-group">
-                  <label for="notes">Notes:</label>
-                  <textarea id="notes" name="notes" rows="4"></textarea>
-                </div>
-                <!-- Privacy checkbox -->
-                <div class="checkbox-group">
-                  <input type="checkbox" id="privacy" name="privacy" required />
-                  <label for="privacy"
-                    >I agree to the <a href="#">Privacy Policy</a></label
-                  >
-                </div>
-                <!-- Cancellation checkbox -->
-                <div class="checkbox-group">
-                  <input
-                    type="checkbox"
-                    id="cancellation"
-                    name="cancellation"
-                    required
-                  />
-                  <label for="cancellation"
-                    >I agree to the <a href="#">Cancellation Policy</a></label
-                  >
-                </div>
-                <!-- Sumbit/book now button -->
-                <button type="submit" class="btn btn-large submit-btn">
-                  Book Now
-                </button>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-flex">
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_facebook.svg" alt="Facebook Icon"
-          /></a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_instagram.svg" alt="Instagram Icon"
-          /></a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_youtube.svg" alt="YouTube Icon"
-          /></a>
-          <a
-            href="https://www.messenger.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_messenger.svg" alt="Messenger Icon"
-          /></a>
-        </div>
-        <div class="address">
-          <div class="location-details">
-            <p>
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <!-- Social media icons -->
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_facebook.svg"
+                  width="30"
+                  alt="Facebook Icon"
+              /></a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_instagram.svg"
+                  width="30"
+                  alt="Instagram Icon"
+              /></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_youtube.svg"
+                  width="30"
+                  alt="YouTube Icon"
+              /></a>
+              <a
+                href="https://www.messenger.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_messenger.svg"
+                  width="30"
+                  alt="Messenger Icon"
+              /></a>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
               123 Dog Street, Hamilton<br />
               021 123 4567
             </p>
+            <!-- Hours -->
+            <p class="small mb-0 mt-2">
+              <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
+              <span>(Closed Public Holidays)</span>
+            </p>
           </div>
-          <p class="hours">
-            <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
-            <span>(Closed Public Holidays)</span>
-          </p>
         </div>
       </div>
     </footer>
+    <!-- JS script to handle the hamburger menu, needed to replace the css workaround in the previous version -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

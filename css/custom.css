@@ -1,0 +1,83 @@
+/* css file for storing branding formatting not available in Bootstrap */
+
+:root {
+  --primary-color: #3a9798;
+  --secondary-color: #c2a04b;
+  --accent-color: #192d4c;
+  --text-color: #171717;
+  --white: #ffffff;
+  --softer-grey: #eeeeee;
+  --soft-grey: #cccccc;
+  --grey: #999999;
+  --darker-grey: #333333;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 20px;
+  font-weight: bold;
+  padding: 10px 40px;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: auto;
+}
+
+.nav-link {
+  color: var(--primary-color) !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-left: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent-color) !important;
+  text-decoration: underline;
+}
+
+.bg-alt {
+  background-color: var(--secondary-color);
+}
+
+.bg-grey {
+  background-color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Image Styling */
+.img-bordered {
+  background: var(--soft-grey);
+  border: 1px solid var(--grey);
+  padding: 5px;
+}
+
+/* Gallery hover effect */
+.hover-zoom {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  position: relative;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}

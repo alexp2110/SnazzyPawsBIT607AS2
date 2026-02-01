@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,268 +8,314 @@
       content="Snazzy Paws Grooming - Professional Dog Grooming Services in Hamilton"
     />
     <title>Services | Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
     <header>
-      <div class="container header-flex">
-        <h1>
-          <a href="index.html">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
             <img
               src="images/Logo.svg"
               alt="Snazzy Paws Grooming"
               class="logo-img"
+              width="200"
             />
           </a>
-        </h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="services-section">
+      <section class="py-5">
         <div class="container">
-          <h2>Our Services</h2>
+          <h2 class="mb-4">Our Services</h2>
           <!-- Pricing table -->
-          <div class="table-wrapper">
-            <table class="services-table">
-              <thead>
+          <div class="table-responsive shadow-sm rounded">
+            <table class="table table-striped table-hover mb-0">
+              <thead class="table-dark">
                 <tr>
-                  <th>Service</th>
-                  <th>Description</th>
-                  <th>Price</th>
+                  <th scope="col" class="p-3">Service</th>
+                  <th scope="col" class="p-3">Description</th>
+                  <th scope="col" class="p-3">Price</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td data-label="Service"><strong>Bath and Brush</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Bath and Brush</td>
+                  <td class="p-3">
                     Shampoo, blow-dry, brush-out and nail trim.
                   </td>
-                  <td data-label="Price">$25 – $50</td>
+                  <td class="p-3 text-nowrap">$25 – $50</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Haircut</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Haircut</td>
+                  <td class="p-3">
                     Bath, blow-dry, haircut (based on breed standard or owner's
                     preference) and nail trim.
                   </td>
-                  <td data-label="Price">$45 – $85</td>
+                  <td class="p-3 text-nowrap">$45 – $85</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Nail Trim</strong></td>
-                  <td data-label="Description">
-                    Trim nails and, in some cases, filing.
-                  </td>
-                  <td data-label="Price">$10 – $20</td>
+                  <td class="p-3 fw-bold">Nail Trim</td>
+                  <td class="p-3">Trim nails and, in some cases, filing.</td>
+                  <td class="p-3 text-nowrap">$10 – $20</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Ear Cleaning</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Ear Cleaning</td>
+                  <td class="p-3">
                     Gentle cleaning of ears to remove wax and debris.
                   </td>
-                  <td data-label="Price">$10 – $15</td>
+                  <td class="p-3 text-nowrap">$10 – $15</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Teeth Brushing</strong></td>
-                  <td data-label="Description">
-                    Brushing with pet-safe toothpaste.
-                  </td>
-                  <td data-label="Price">$10 – $15</td>
+                  <td class="p-3 fw-bold">Teeth Brushing</td>
+                  <td class="p-3">Brushing with pet-safe toothpaste.</td>
+                  <td class="p-3 text-nowrap">$10 – $15</td>
                 </tr>
                 <tr>
-                  <td data-label="Service">
-                    <strong>De-shedding Treatment</strong>
-                  </td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">De-shedding Treatment</td>
+                  <td class="p-3">
                     Special shampoo and undercoat removal.<br />(addition to
                     bath or haircut)
                   </td>
-                  <td data-label="Price">$20 – $40</td>
+                  <td class="p-3 text-nowrap">$20 – $40</td>
                 </tr>
                 <tr>
-                  <td data-label="Service">
-                    <strong>Flea and Tick Treatment</strong>
-                  </td>
-                  <td data-label="Description">
-                    Shampoo and preventative treatment.
-                  </td>
-                  <td data-label="Price">$15 – $30</td>
+                  <td class="p-3 fw-bold">Flea and Tick Treatment</td>
+                  <td class="p-3">Shampoo and preventative treatment.</td>
+                  <td class="p-3 text-nowrap">$15 – $30</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Spa Package</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Spa Package</td>
+                  <td class="p-3">
                     Bath, haircut, teeth brushing, nail trim and sometimes
                     special scents or conditioners.
                   </td>
-                  <td data-label="Price">$75 – $150</td>
+                  <td class="p-3 text-nowrap">$75 – $150</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Express Service</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Express Service</td>
+                  <td class="p-3">
                     For dogs that need minimal grooming or a quick touch-up.<br />(add-on)
                   </td>
-                  <td data-label="Price">$15 – $25</td>
+                  <td class="p-3 text-nowrap">$15 – $25</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Medicated Bath</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Medicated Bath</td>
+                  <td class="p-3">
                     For pets with skin conditions requiring special shampoo.<br />(add-on)
                   </td>
-                  <td data-label="Price">$20 – $40</td>
+                  <td class="p-3 text-nowrap">$20 – $40</td>
                 </tr>
                 <tr>
-                  <td data-label="Service">
-                    <strong>Special-breed Cuts</strong>
-                  </td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Special-breed Cuts</td>
+                  <td class="p-3">
                     Breed-specific cuts or styling based on customer
                     preference.<br />(Price varies and is often quoted after
                     consultation)
                   </td>
-                  <td data-label="Price">TBC</td>
+                  <td class="p-3 text-nowrap">TBC</td>
                 </tr>
                 <tr>
-                  <td data-label="Service"><strong>Puppy Package</strong></td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Puppy Package</td>
+                  <td class="p-3">
                     Introductory grooming services tailored for puppies.
                   </td>
-                  <td data-label="Price">$30 – $60</td>
+                  <td class="p-3 text-nowrap">$30 – $60</td>
                 </tr>
                 <tr>
-                  <td data-label="Service">
-                    <strong>Senior Dog Package</strong>
-                  </td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Senior Dog Package</td>
+                  <td class="p-3">
                     Grooming services tailored for older dogs, often with
                     special handling and care.
                   </td>
-                  <td data-label="Price">$40 – $80</td>
+                  <td class="p-3 text-nowrap">$40 – $80</td>
                 </tr>
                 <tr>
-                  <td data-label="Service">
-                    <strong>Full Grooming Package</strong>
-                  </td>
-                  <td data-label="Description">
+                  <td class="p-3 fw-bold">Full Grooming Package</td>
+                  <td class="p-3">
                     Comprehensive grooming service, including bath, haircut,
                     teeth brushing, nail trim and ear cleaning.
                   </td>
-                  <td data-label="Price">$60 – $120</td>
+                  <td class="p-3 text-nowrap">$60 – $120</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <div class="cta-container">
-            <a href="booking.html" class="btn btn-large">Book Now</a>
+          <div class="text-center mt-5">
+            <a href="booking.html" class="btn btn-primary btn-lg">Book Now</a>
           </div>
         </div>
       </section>
 
       <!-- Testimonials -->
-      <section class="testimonials-section">
+      <section class="py-5 bg-alt">
         <div class="container">
-          <h2 style="text-align: center; margin-bottom: 30px">
-            Happy Customers
-          </h2>
+          <h2 class="text-center mb-5">Happy Customers</h2>
 
-          <div class="testimonials-grid">
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti molestiae dolor, recusandae itaque."
-              </p>
-              <p><strong>- Fran</strong></p>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="text-warning fs-4 mb-2">★★★★★</div>
+                  <p class="card-text fst-italic">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Corrupti molestiae dolor, recusandae itaque."
+                  </p>
+                  <p class="fw-bold mb-0">- Fran</p>
+                </div>
+              </div>
             </div>
 
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti molestiae dolor, recusandae itaque."
-              </p>
-              <p><strong>- Tamara</strong></p>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="text-warning fs-4 mb-2">★★★★★</div>
+                  <p class="card-text fst-italic">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Corrupti molestiae dolor, recusandae itaque."
+                  </p>
+                  <p class="fw-bold mb-0">- Tamara</p>
+                </div>
+              </div>
             </div>
 
-            <div class="testimonial-card">
-              <div class="stars">★★★★★</div>
-              <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti molestiae dolor, recusandae itaque."
-              </p>
-              <p><strong>- Lina</strong></p>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="text-warning fs-4 mb-2">★★★★★</div>
+                  <p class="card-text fst-italic">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Corrupti molestiae dolor, recusandae itaque."
+                  </p>
+                  <p class="fw-bold mb-0">- Lina</p>
+                </div>
+              </div>
             </div>
 
-            <div class="testimonial-card">
-              <div class="stars">★★★★☆</div>
-              <p>
-                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Corrupti molestiae dolor, recusandae itaque."
-              </p>
-              <p><strong>- Jordan</strong></p>
+            <div class="col-md-6 col-lg-3">
+              <div class="card h-100 shadow-sm border-0">
+                <div class="card-body text-center">
+                  <div class="text-warning fs-4 mb-2">★★★★☆</div>
+                  <p class="card-text fst-italic">
+                    "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Corrupti molestiae dolor, recusandae itaque."
+                  </p>
+                  <p class="fw-bold mb-0">- Jordan</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-flex">
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_facebook.svg" alt="Facebook Icon"
-          /></a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_instagram.svg" alt="Instagram Icon"
-          /></a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_youtube.svg" alt="YouTube Icon"
-          /></a>
-          <a
-            href="https://www.messenger.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_messenger.svg" alt="Messenger Icon"
-          /></a>
-        </div>
-        <div class="address">
-          <div class="location-details">
-            <p>
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <!-- Social media icons -->
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_facebook.svg"
+                  width="30"
+                  alt="Facebook Icon"
+              /></a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_instagram.svg"
+                  width="30"
+                  alt="Instagram Icon"
+              /></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_youtube.svg"
+                  width="30"
+                  alt="YouTube Icon"
+              /></a>
+              <a
+                href="https://www.messenger.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_messenger.svg"
+                  width="30"
+                  alt="Messenger Icon"
+              /></a>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
               123 Dog Street, Hamilton<br />
               021 123 4567
             </p>
+            <!-- Hours -->
+            <p class="small mb-0 mt-2">
+              <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
+              <span>(Closed Public Holidays)</span>
+            </p>
           </div>
-          <p class="hours">
-            <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
-            <span>(Closed Public Holidays)</span>
-          </p>
         </div>
       </div>
     </footer>
+    <!-- JS script to handle the hamburger menu, needed to replace the css workaround in the previous version -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

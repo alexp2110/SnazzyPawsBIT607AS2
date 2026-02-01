@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,173 +8,266 @@
       content="Snazzy Paws Grooming - Professional Dog Grooming Services in Hamilton"
     />
     <title>Gallery | Snazzy Paws Grooming</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
     <header>
-      <div class="container header-flex">
-        <h1>
-          <a href="index.html">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-white border-bottom py-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
             <img
               src="images/Logo.svg"
               alt="Snazzy Paws Grooming"
               class="logo-img"
+              width="200"
             />
           </a>
-        </h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-        <label for="nav-toggle" class="nav-burger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
 
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="gallery.html" class="active">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="booking.html">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-      <section class="gallery-section">
+      <section class="py-5">
         <div class="container">
-          <h2>Our Gallery</h2>
-          <div class="gallery-grid">
-            <img
-              src="images/gallery-images/pexels-alexandru-rotariu-230845-733416.jpg"
-              alt="Portrait of a grey Pitbull with striking blue-green eyes."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-brunocervera-128817.jpg"
-              alt="Golden Retriever puppy resting its chin on its front paws on a tiled floor."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-cdomingues10-731022.jpg"
-              alt="Small white and tan dog sleeping peacefully in a warm sunbeam."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-charlesdeluvio-1851164.jpg"
-              alt="Black and white portrait of a black pug looking up with wide, expressive eyes."
-              class="gallery-img"
-            />
-
-            <img
-              src="images/gallery-images/pexels-chevanon-1108099.jpg"
-              alt="Two fluffy Golden Retriever puppies sitting side-by-side on grass scattered with orange flowers."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-gilberto-reyes-259461-825947.jpg"
-              alt="Black and white studio portrait of a pitbull with one perked ear and one floppy ear."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-helenalopes-2253275.jpg"
-              alt="Happy Golden Retriever smiling directly at the camera in an indoor setting."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-hnoody93-58997.jpg"
-              alt="Corgi with heterochromia (one blue eye, one brown eye) walking on a concrete path next to water."
-              class="gallery-img"
-            />
-
-            <img
-              src="images/gallery-images/pexels-katlovessteve-551628.jpg"
-              alt="Black and white Border Collie looking up eagerly with a happy expression."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-lucasandrade-4681107.jpg"
-              alt="Husky puppy with different colored eyes resting its head on a soft surface."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-lum3n-44775-406014.jpg"
-              alt="Close-up of a brown dog's eyes and nose peeking up from the bottom of the frame."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-pixabay-160846.jpg"
-              alt="French Bulldog standing on hind legs to peek over a white fence."
-              class="gallery-img"
-            />
-
-            <img
-              src="images/gallery-images/pexels-pixabay-220938.jpg"
-              alt="Studio portrait of a happy black and white Shepherd dog against a grey background."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-pixabay-46505.jpg"
-              alt="White Shepherd dog looking down at the camera against a bright blue sky."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-svetozar-milashevich-99573-1490908.jpg"
-              alt="Close-up of a happy Golden Retriever smiling outdoors with a blurred background."
-              class="gallery-img"
-            />
-            <img
-              src="images/gallery-images/pexels-valeriya-1805164.jpg"
-              alt="Shiba Inu puppy sitting on a fluffy white rug next to a window."
-              class="gallery-img"
-            />
+          <h2 class="mb-4">Our Gallery</h2>
+          <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-alexandru-rotariu-230845-733416.jpg"
+                alt="Portrait of a grey Pitbull with striking blue-green eyes."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-brunocervera-128817.jpg"
+                alt="Golden Retriever puppy resting its chin on its front paws on a tiled floor."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-cdomingues10-731022.jpg"
+                alt="Small white and tan dog sleeping peacefully in a warm sunbeam."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-charlesdeluvio-1851164.jpg"
+                alt="Black and white portrait of a black pug looking up with wide, expressive eyes."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-chevanon-1108099.jpg"
+                alt="Two fluffy Golden Retriever puppies sitting side-by-side on grass scattered with orange flowers."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-gilberto-reyes-259461-825947.jpg"
+                alt="Black and white studio portrait of a pitbull with one perked ear and one floppy ear."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-helenalopes-2253275.jpg"
+                alt="Happy Golden Retriever smiling directly at the camera in an indoor setting."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-hnoody93-58997.jpg"
+                alt="Corgi with heterochromia (one blue eye, one brown eye) walking on a concrete path next to water."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-katlovessteve-551628.jpg"
+                alt="Black and white Border Collie looking up eagerly with a happy expression."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-lucasandrade-4681107.jpg"
+                alt="Husky puppy with different colored eyes resting its head on a soft surface."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-lum3n-44775-406014.jpg"
+                alt="Close-up of a brown dog's eyes and nose peeking up from the bottom of the frame."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-pixabay-160846.jpg"
+                alt="French Bulldog standing on hind legs to peek over a white fence."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-pixabay-220938.jpg"
+                alt="Studio portrait of a happy black and white Shepherd dog against a grey background."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-pixabay-46505.jpg"
+                alt="White Shepherd dog looking down at the camera against a bright blue sky."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-svetozar-milashevich-99573-1490908.jpg"
+                alt="Close-up of a happy Golden Retriever smiling outdoors with a blurred background."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+              <img
+                src="images/gallery-images/pexels-valeriya-1805164.jpg"
+                alt="Shiba Inu puppy sitting on a fluffy white rug next to a window."
+                class="img-fluid rounded shadow-sm w-100 h-100 object-fit-cover hover-zoom"
+                style="min-height: 250px; max-height: 250px"
+              />
+            </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container footer-flex">
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_facebook.svg" alt="Facebook Icon"
-          /></a>
-          <a
-            href="https://www.instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_instagram.svg" alt="Instagram Icon"
-          /></a>
-          <a
-            href="https://www.youtube.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_youtube.svg" alt="YouTube Icon"
-          /></a>
-          <a
-            href="https://www.messenger.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="images/icons/icon_messenger.svg" alt="Messenger Icon"
-          /></a>
-        </div>
-        <div class="address">
-          <div class="location-details">
-            <p>
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <!-- Social media icons -->
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-3"
+            >
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_facebook.svg"
+                  width="30"
+                  alt="Facebook Icon"
+              /></a>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_instagram.svg"
+                  width="30"
+                  alt="Instagram Icon"
+              /></a>
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_youtube.svg"
+                  width="30"
+                  alt="YouTube Icon"
+              /></a>
+              <a
+                href="https://www.messenger.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img
+                  src="images/icons/icon_messenger.svg"
+                  width="30"
+                  alt="Messenger Icon"
+              /></a>
+            </div>
+          </div>
+          <!-- Address -->
+          <div class="col-md-6 text-md-end">
+            <p class="mb-0">
               123 Dog Street, Hamilton<br />
               021 123 4567
             </p>
+            <!-- Hours -->
+            <p class="small mb-0 mt-2">
+              <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
+              <span>(Closed Public Holidays)</span>
+            </p>
           </div>
-          <p class="hours">
-            <strong>Open Tue - Sat:</strong> 9am - 5pm<br />
-            <span>(Closed Public Holidays)</span>
-          </p>
         </div>
       </div>
     </footer>
+    <!-- JS script to handle the hamburger menu, needed to replace the css workaround in the previous version -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
